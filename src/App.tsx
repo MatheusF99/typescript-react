@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import api from '../services/api'
+import api from './services/api'
+
+import User from '../src/components/user'
 
 
 interface userProps{
@@ -21,7 +23,7 @@ function App() {
   return (
     <div className="App">
         {
-          users.map(user => <p>{user}</p>)
+          users.map(user => <User key={user.email} user={user}/>)
         }
     </div>
   );
