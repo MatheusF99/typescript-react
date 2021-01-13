@@ -15,7 +15,6 @@ const User: React.FC<Props> = ({user}) =>{
         <div>
             <strong>Nome: </strong>{ user.name} <br/>
             <strong>email: </strong>{ user.email} <br/>
-
         </div>
     )
 }
